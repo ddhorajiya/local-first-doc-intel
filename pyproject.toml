@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 authors = [
-  { name = "Your Name" }
+  { name = "Deep Dhorajiya" }
 ]
 keywords = ["local-first", "privacy", "ollama", "vector-search", "documents"]
 classifiers = [
