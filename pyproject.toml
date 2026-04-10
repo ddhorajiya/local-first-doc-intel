@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "local-first-doc-intel"
+version = "0.1.0"
+description = "Local-first document intelligence: watch folders, summarize, tag, and search privately."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+  { name = "Your Name" }
+]
+keywords = ["local-first", "privacy", "ollama", "vector-search", "documents"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "watchdog>=4.0.0",
+  "pypdf>=4.2.0",
+  "markdown>=3.6",
+  "chromadb>=0.5.5",
+  "ollama>=0.3.1",
+  "python-dotenv>=1.0.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0.0"
+]
+
+[project.scripts]
+lfdi = "lfdi.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
