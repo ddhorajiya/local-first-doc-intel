@@ -3,6 +3,7 @@ __pycache__/
 .pytest_cache/
 .env
 .env.*
+!.env.example
 *.sqlite
 *.sqlite3
 data/
